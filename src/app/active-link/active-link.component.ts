@@ -5,13 +5,13 @@ import { Router } from '@angular/router';
   selector: 'active-link',
   standalone: true,
   imports: [],
-  template: '<a [href]="href" [style]="style()">{{ title }}</a>',
+  template: '<a [href]="href" [style]="style()" (click)="handleClick($event)">{{ title }}</a>',
   //templateUrl: './active-link.component.html',
   //styleUrl: './active-link.component.css'
 })
 export class ActiveLinkComponent {
-  @Input() title = '';
-  @Input() href = '';
+  @Input({required: true}) title = '';
+  @Input({required: true}) href = '';
   router = new Router();
   style() {
     return {
