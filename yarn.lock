@@ -1549,6 +1549,20 @@
   dependencies:
     tslib "^2.2.0"
 
+"@ng-icons/lucide@^26.3.0":
+  version "26.3.0"
+  resolved "https://registry.yarnpkg.com/@ng-icons/lucide/-/lucide-26.3.0.tgz#b7808aa4474a6d5cd87215e3033f4ad4dd968885"
+  integrity sha512-y9jxV28hWLYf74cC4EBOh8qMTBh+oczo47/nGU8iC/dZc9CXSUckbe8AMosqTDBY1gaBAZ/jLnwpg6EscHLapg==
+  dependencies:
+    tslib "^2.2.0"
+
+"@ng-icons/simple-icons@^26.3.0":
+  version "26.3.0"
+  resolved "https://registry.yarnpkg.com/@ng-icons/simple-icons/-/simple-icons-26.3.0.tgz#d95bdeec788da03ac7dc281e9797a58fb19ea672"
+  integrity sha512-usG+EQK2CIMOh8bYtV6eJ13vYs5qk6WkNnaF2n9UhHWk+JtShvYioc5iaWxUvAGYJEl5kiqxLBVxA68czDqtZg==
+  dependencies:
+    tslib "^2.2.0"
+
 "@ngtools/webpack@17.0.7":
   version "17.0.7"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-17.0.7.tgz#21e457c8ac9645990589df2ed9e536bde58697e6"

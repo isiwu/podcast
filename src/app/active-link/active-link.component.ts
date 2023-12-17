@@ -16,6 +16,7 @@ export class ActiveLinkComponent {
   style() {
     return {
       'color': this.router.url===this.href?'#6600cc':'',
+      'text-decoration': this.router.url===this.href?'underline':'',
       cursor: this.router.url===this.href?'default':'pointer'
     }
   }
