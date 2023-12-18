@@ -1,0 +1,5 @@
+<a [href]="href" [ngClass]="{
+  'text-lg': true,
+  'text-[#6600cc] cursor-default underline': router.url===href,
+  'hover:text-[#4f00aa67] duration-700': router.url!==href
+  }" (click)="handleClick($event)">{{ title }}</a>

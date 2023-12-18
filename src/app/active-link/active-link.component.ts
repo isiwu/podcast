@@ -1,12 +1,13 @@
+import { NgClass } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'active-link',
   standalone: true,
-  imports: [],
-  template: '<a [href]="href" [style]="style()" (click)="handleClick($event)">{{ title }}</a>',
-  //templateUrl: './active-link.component.html',
+  imports: [NgClass],
+  //template: '<a [href]="href" [style]="style()" (click)="handleClick($event)">{{ title }}</a>',
+  templateUrl: './active-link.component.html',
   //styleUrl: './active-link.component.css'
 })
 export class ActiveLinkComponent {
