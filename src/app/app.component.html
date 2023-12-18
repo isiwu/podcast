@@ -1,26 +1,30 @@
 <main class="main">
-  <div class="px-4 pt-4 bg-[url('/assets/bg-image.svg')] h-[100vh] bg-no-repeat bg-contain">
+  <div class="px-4 pt-4 bg-[url('/assets/bg-image.svg')] h-[100vh] bg-no-repeat bg-center bg-cover md:bg-contain">
     <div class="flex justify-between items-center">
       <div><span class="cursor-pointer text-2xl">Resontor</span><sup>&reg;</sup></div>
-      <div class="flex items-center space-x-6">
-        <active-link title="Home" href="/"></active-link>
-        <active-link title="Pages" href="/pages"></active-link>
-        <active-link title="Podcast" href="/podcast"></active-link>
-        <a href="">Blog</a>
-        <a href="">Shop</a>
-      </div>
-      <div class="flex items-center space-x-6">
-        <div class="flex items-center space-x-2">
-          <span><ng-icon name="bootstrapSearch"></ng-icon></span>
-          <span>search</span>
+      <div class="hidden md:block">
+        <div class="flex items-center space-x-6">
+          <active-link title="Home" href="/"></active-link>
+          <active-link title="Pages" href="/pages"></active-link>
+          <active-link title="Podcast" href="/podcast"></active-link>
+          <active-link title="Blog" href="/blog">Blog</active-link>
+          <active-link title="Shop" href="/shop">Shop</active-link>
         </div>
-        <div><ng-icon name="bootstrapGrid3x3Gap"></ng-icon></div>
+      </div>
+      <div class="hidden md:block">
+        <div class="flex items-center space-x-6">
+          <div class="flex items-center space-x-2">
+            <span><ng-icon name="bootstrapSearch"></ng-icon></span>
+            <span>search</span>
+          </div>
+          <div><ng-icon name="bootstrapGrid3x3Gap"></ng-icon></div>
+        </div>
       </div>
     </div>
-    <div class="w-[80%] mx-auto mt-32 space-y-2">
-      <p class="text-7xl text-black font-bold">New episode<br /> available now</p>
+    <div class="w-[80%] mx-auto mt-5 md:mt-32 md:space-y-2">
+      <p class="text-3xl md:text-7xl text-black font-bold mb-6 md:mb-0">New episode<br /> available now</p>
       <p>Available on Apple Soundcast and Spotify.</p>
-      <div class="flex items-center space-x-3 text-white">
+      <div class="flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-3 mt-36 md:mt-0 text-white">
         <div class="flex space-x-4 bg-black py-2 px-6 rounded-full">
           <div><ng-icon name="lucidePodcast" class="text-4xl mt-1"></ng-icon></div>
           <div>
