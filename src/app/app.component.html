@@ -96,6 +96,17 @@
       <div><img src="assets/bestplace.svg" alt="" /></div>
     </div>
   </div>
+  <div class="bg-gray-50">
+    <div class="text-center mb-6 pt-14">
+      <h2 class="text-3xl font-bold">Top podcasts:</h2>
+      <p class="">Discover the selection of the most podcasts.</p>
+    </div>
+    <div class="flex items-center space-x-10 pb-8">
+      @for (item of items; track item.title) {
+        <app-top-podcast [image]="item"></app-top-podcast>
+      }
+    </div>
+  </div>
 </main>
 
 
