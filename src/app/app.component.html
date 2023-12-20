@@ -108,7 +108,7 @@
     </div>
   </div>
   <div class="w-[70%] mx-auto">
-    <div class="pt-20">
+    <div class="pt-20 pb-28">
       <div class="flex justify-between mb-10">
         <div class="font-black text-4xl">Essential episodes:</div>
         <div class="flex items-center space-x-2 font-semibold text-black/70 hover:text-black/100 cursor-pointer duration-200">
@@ -120,6 +120,15 @@
         @for (essentialPodcast of essentialPodcasts; track essentialPodcast.title) {
           <app-essential-podcast [image]="essentialPodcast" />
         }
+      </div>
+    </div>
+  </div>
+  <div class="relative">
+    <div><img src="assets/rocks.svg" alt="rocks"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <!-- <ng-icon name="bootstrapPlayCircleFill" class="text-white text-7xl cursor-pointer"></ng-icon> -->
+      <div class="bg-white w-16 h-16 rounded-full flex justify-center items-center cursor-pointer">
+        <ng-icon name="bootstrapPlayFill" class="text-3xl"></ng-icon>
       </div>
     </div>
   </div>

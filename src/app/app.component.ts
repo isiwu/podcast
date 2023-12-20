@@ -6,7 +6,8 @@ import {
   bootstrapSearch, 
   bootstrapGrid3x3Gap, 
   bootstrapVolumeUpFill, 
-  bootstrapArrowRight } from '@ng-icons/bootstrap-icons';
+  bootstrapArrowRight, 
+  bootstrapPlayFill} from '@ng-icons/bootstrap-icons';
 import { lucidePodcast } from '@ng-icons/lucide'
 import { ActiveLinkComponent } from './active-link/active-link.component';
 import { simpleSoundcloud } from '@ng-icons/simple-icons';
@@ -30,7 +31,8 @@ import { EssentialPodcastComponent } from './essential-podcast/essential-podcast
     lucidePodcast, 
     simpleSoundcloud, 
     bootstrapVolumeUpFill,
-    bootstrapArrowRight
+    bootstrapArrowRight,
+    bootstrapPlayFill
   })],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
