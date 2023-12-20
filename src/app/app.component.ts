@@ -11,11 +11,19 @@ import { lucidePodcast } from '@ng-icons/lucide'
 import { ActiveLinkComponent } from './active-link/active-link.component';
 import { simpleSoundcloud } from '@ng-icons/simple-icons';
 import { TopPodcastComponent } from './top-podcast/top-podcast.component';
+import { EssentialPodcastComponent } from './essential-podcast/essential-podcast.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NgIconComponent, ActiveLinkComponent, TopPodcastComponent],
+  imports: [
+    CommonModule, 
+    RouterOutlet, 
+    NgIconComponent, 
+    ActiveLinkComponent, 
+    TopPodcastComponent,
+    EssentialPodcastComponent,
+  ],
   viewProviders: [provideIcons({
     bootstrapSearch, 
     bootstrapGrid3x3Gap, 
@@ -42,5 +50,37 @@ export class AppComponent {
       src: 'assets/top-podcast/top-3.svg',
       title: 'top-3'
     }
-  ]
+  ];
+  essentialPodcasts = [
+    {
+      src: "assets/ess-podcast/essential-1.svg",
+      title: "essential-1",
+      description: "SRKP selects: how the new ages work"
+    },
+    {
+      src: "assets/ess-podcast/essential-2.svg",
+      title: "essential-2",
+      description: "SRKP selects: a new mindset today"
+    },
+    {
+      src: "assets/ess-podcast/essential-3.svg",
+      title: "essential-3",
+      description: "SRKP selects: latest trends now"
+    },
+    {
+      src: "assets/ess-podcast/essential-4.svg",
+      title: "essential-4",
+      description: "SRKP selects: organize your day"
+    },
+    {
+      src: "assets/ess-podcast/essential-5.svg",
+      title: "essential-5",
+      description: "SRKP selects: how to plan your work"
+    },
+    {
+      src: "assets/ess-podcast/essential-6.svg",
+      title: "essential-6",
+      description: "SRKP selects: trying the best phones"
+    }
+  ];
 }

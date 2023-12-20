@@ -1,0 +1,18 @@
+<div class="shadow-md rounded-md">
+  <div class="relative">
+    <div><img [src]="image.src" [alt]="image.title" class="w-full h-full rounded-t-md"></div>
+    <div class="absolute top-2 right-2 bg-white rounded-md w-6 text-center">
+      <ng-icon name="bootstrapHeadphones"></ng-icon>
+    </div>
+  </div>
+  <div class="bg-white p-4 space-y-3">
+    <div class="flex"><span>Episode 1</span><span>.</span><span>Technology</span></div>
+    <div class="underline font-bold text-2xl">{{ image.description}}</div>
+    <div class="flex items-center space-x-2 pt-2">
+      <span>Share</span>
+      <div class="w-6 h-6 rounded-full bg-black/10 flex justify-center items-center">
+        <ng-icon name="bootstrapShareFill"></ng-icon>
+      </div>
+    </div>
+  </div>
+</div>
