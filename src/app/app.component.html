@@ -132,6 +132,22 @@
       </div>
     </div>
   </div>
+  <div class="w-[70%] mx-auto">
+    <div class="pt-20 pb-28">
+      <div class="flex justify-between mb-10">
+        <div class="font-black text-4xl">Meet your hosts:</div>
+        <div class="flex items-center space-x-2 font-semibold text-black/70 hover:text-black/100 cursor-pointer duration-200">
+          <span>view all of them</span>
+          <ng-icon name="bootstrapArrowRight"></ng-icon>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        @for (host of hosts; track host.name) {
+          <app-host [host]="host" />
+        }
+      </div>
+    </div>
+  </div>
 </main>
 
 

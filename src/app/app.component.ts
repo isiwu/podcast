@@ -13,6 +13,7 @@ import { ActiveLinkComponent } from './active-link/active-link.component';
 import { simpleSoundcloud } from '@ng-icons/simple-icons';
 import { TopPodcastComponent } from './top-podcast/top-podcast.component';
 import { EssentialPodcastComponent } from './essential-podcast/essential-podcast.component';
+import { HostComponent } from './host/host.component';
 
 @Component({
   selector: 'app-root',
@@ -24,6 +25,7 @@ import { EssentialPodcastComponent } from './essential-podcast/essential-podcast
     ActiveLinkComponent, 
     TopPodcastComponent,
     EssentialPodcastComponent,
+    HostComponent,
   ],
   viewProviders: [provideIcons({
     bootstrapSearch, 
@@ -85,4 +87,18 @@ export class AppComponent {
       description: "SRKP selects: trying the best phones"
     }
   ];
+  hosts = [
+    {
+      image: "assets/hosts/host-1.svg",
+      name: "bella jimenez"
+    },
+    {
+      image: "assets/hosts/host-2.svg",
+      name: "edmin watson"
+    },
+    {
+      image: "assets/hosts/host-3.svg",
+      name: "cailtlin henderson"
+    }
+  ]
 }

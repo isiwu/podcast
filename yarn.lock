@@ -1563,6 +1563,13 @@
   dependencies:
     tslib "^2.2.0"
 
+"@ng-icons/typicons@26.3.0":
+  version "26.3.0"
+  resolved "https://registry.yarnpkg.com/@ng-icons/typicons/-/typicons-26.3.0.tgz#0b4024047de9bd2a9372aeea360bb0e1701e2f43"
+  integrity sha512-Hrc0O7gWzWd+wut80NO4uKfIsGKhn3L96dEF34O1qazeyVz//aMa8DAukKeKt6PPHoLiS2cuk+SljVoJam/M1A==
+  dependencies:
+    tslib "^2.2.0"
+
 "@ngtools/webpack@17.0.7":
   version "17.0.7"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-17.0.7.tgz#21e457c8ac9645990589df2ed9e536bde58697e6"
